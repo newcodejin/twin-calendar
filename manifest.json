@@ -1,0 +1,10 @@
+{
+  "id": "twin-calendar",
+  "name": "Twin Calendar",
+  "description": "Shows this month and next month, with a marker on days that have a daily note.",
+  "version": "1.0.0",
+  "author": "newcodejin",
+  "authorUrl": "https://github.com/newcodejin",
+  "isDesktopOnly": false,
+  "minAppVersion": "1.0.0"
+}
