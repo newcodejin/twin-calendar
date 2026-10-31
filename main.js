@@ -172,11 +172,13 @@ class TwinCalendarView extends ItemView {
     }
   }
 
-  // Month/year title for the calendars below the header
+  // Month title for the calendars below the header; the year shows only when it differs from the header's
   renderMonthTitle(el, month) {
     const title = el.createDiv({ cls: "sc-title sc-month-title" });
     title.createSpan({ cls: "sc-month", text: month.format("MMMM") });
-    title.createSpan({ cls: "sc-year", text: month.format("YYYY") });
+    if (!month.isSame(this.displayed, "year")) {
+      title.createSpan({ cls: "sc-year", text: month.format("YYYY") });
+    }
   }
 
   applyAppearance(el) {
